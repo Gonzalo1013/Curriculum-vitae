@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #E4CEC1;
+    color: #303030;
+    margin: 5% 10%;
+    font-family: 'Montserrat', sans-serif;
+}
+/*------------------HEADER-------------*/
+.header{
+    display: flex;  
+    justify-content: space-between;
+}
+.header .title .link__page{
+    text-decoration: none;
+    color: #303030;
+    margin-bottom: 16px;
+}
+.header .title .link__page:hover{
+    color: rgb(100, 216, 255);
+}
+.language{
+    display:flex;
+}
+.language img{
+    width: 25px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.language span:nth-of-type(1){
+    color: #333;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.language span:nth-of-type(2){
+    color: #00a1ff;
+    margin-left: 10px;
+    font-weight: bold;  
+}
+.language .check{
+   position: relative;
+   width: 50px;
+   height: 10px;
+}
+.language .check:before{
+    content: '';
+    width: 50px;
+    height: 25px;
+    background: #333;
+    position: absolute;
+    border-radius: 50px 50px;
+    
+}
+.language .check:after{
+    content:'';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: solid 2px #333;
+    box-sizing: border-box;
+    transition: 0.25s;
+}
+.language .check:checked:after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+}
+.language .check:checked:before{
+    background-color: #00a1ff;
+}
+
+
+
+/*-+----------------INFORMATION CONTACT----------------*/
+.container{
+    display: flex;
+    box-shadow: white 3px 3px 15px;
+    
+}
+.container .container__contact{
+    background-color: #f5f5f5;
+}
+.container .container__contact figure{
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    margin: 16px;
+}
+.container .container__contact figure .img__profile{
+    width: 200px;
+    border-radius: 50%;
+}
+.container__contact .data__contact{
+    display: block;
+    margin: 64px 16px ;
+    overflow: hidden;
+}
+.container__contact .data__contact .container__figures{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.container__contact .data__contact figure .icons{
+    width: 25px;
+    margin: 0px 8px;
+}
+.name{
+    margin-top: 32px;
+    font-style: underline;
+    text-align: center;
+}
+
+.container__contact .data__contact .sub__title{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 32px;
+}
+.more__info h4{
+    text-align: center;
+    margin: 32px 0px 16px 0px;
+    text-decoration: underline  ;
+}
+.more__info .info{
+    margin-left: 64px;
+}
+.more__info .info span{
+    font-weight: bold;
+}
+.more__info .info p{
+    margin-top: 8px;
+}
+/* LINK GITHUB */
+.repositori{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+.repositori .icon__git{
+    width: 25px;
+    margin-right: 8px;
+}
+.repositori a{
+    text-decoration: none;
+    color: rgb(28, 28, 255);
+    padding: 8px;
+}
+.repositori a:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+
+/*--------INFORMATION----------------*/
+/*-------EDUCATION*--------*/
+
+.container .container__information{
+    background-color: #fff;
+}
+.information{
+    margin: 32px 15%;
+
+}
+.information .education span{
+    font-weight: bold;
+}
+.information .education  p{
+    margin: 8px 0px;
+}
+.information .education .link__certificate{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #03ce25;
+}
+.information .education .link__certificate:hover{
+    text-decoration: underline;
+}
+.container__information .information .more_skins p{
+    font-weight: bolder;
+}
+.sub__titles{
+    text-align: center;
+    text-decoration: underline;
+    margin: 32px 0px 16px 0px;
+}
+.container__icons{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+body section .icon img{
+    width: 50px;
+}
+/*------------WORK EXPERIENCE------------------*/
+/*-------COMPETENCIAS------------*/
+.container__competition p{
+    margin-bottom: 8px;
+}
+/*-----------------LANGUAGES-------------*/
+.container__languages p{
+    margin-bottom: 8px;
+}
+
+/*---------------------TECHNOLOGIES-----------------*/
+.container__technologies .container__icons{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.container__technologies .container__icons .icon{
+    margin: 8px;
+}
+
+/*----------------------FOOTER -------------------*/
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+}
+.footer .icon__copyrigth{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.footer .icon__copyrigth .img__copyrigth{
+    margin-right: 8px;
+    width: 25px;
+}
+/*-------------------------PAGES----------------------------*/
+
+.body__pages{
+    background-color: #E4CEC1;
+    color: #303030;
+    margin: 5% 10%;
+    font-family: 'Montserrat', sans-serif;
+}
+.body__pages .main__pages{
+    text-align: center;
+    margin-top: 32px;
+}
+.body__pages .main__pages .img__certificate{
+    width: 100%;
+}
+.body__pages .button__to__cv{
+    text-align: center;
+    margin: 32px 0px;
+}
+.body__pages .button__to__cv .btn__back{
+    width: 200px;
+    border:solid balck;
+}
+.body__pages .button__to__cv .link__btn{
+    text-decoration: none;
+    color: #000;
+}
+
+/*----------------MEDIA QUERYS-------------*/
+
+@media screen and (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;        
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .container__contact .data__contact{
+        margin: 32px 0px ;
+        overflow-x: scroll;
+    }
+}
