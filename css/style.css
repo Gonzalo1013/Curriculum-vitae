@@ -277,6 +277,9 @@ body section .icon img{
     }
 }
 @media screen and (max-width: 520px){
+    body{
+        margin: 1% 2%;
+    }
     .header{
         display: flex;
         flex-direction: column;
