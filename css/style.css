@@ -265,7 +265,7 @@ body section .icon img{
 @media screen and (max-width: 768px){
     .container{
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;       
     }
     .footer{
         display: flex;
@@ -274,5 +274,18 @@ body section .icon img{
     .container__contact .data__contact{
         margin: 32px 0px ;
         overflow-x: scroll;
+    }
+}
+@media screen and (max-width: 520px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header .title{
+        font-size: 1.2em;
+    }
+    .header span{
+        font-size: 1em;
     }
 }
